@@ -18,12 +18,8 @@ class NotifyServiceProvider extends ServiceProvider
     public function boot()
     {
         $source = realpath($raw = __DIR__.'/../config/notify.php') ?: $raw;
-
-        if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
-            $this->publishes([$source => config_path('notify.php')], 'config');
-        } elseif ($this->app instanceof LumenApplication) {
-            $this->app->configure('notify');
-        }
+        $this->publishes([$source => config_path('notify.php')], 'config');
+      
 
         $this->mergeConfigFrom($source, 'notify');
 
@@ -37,11 +33,6 @@ class NotifyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if ($this->app instanceof LumenApplication) {
-            $this->app->register(\Illuminate\Session\SessionServiceProvider::class);
-            $this->app->configure('session');
-        }
-
         $this->registerNotify();
     }
 
