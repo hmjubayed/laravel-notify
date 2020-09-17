@@ -5,8 +5,6 @@ namespace Ducor\Notify;
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Lumen\Application as LumenApplication;
-use Illuminate\Foundation\Application as LaravelApplication;
 
 class NotifyServiceProvider extends ServiceProvider
 {
@@ -19,8 +17,6 @@ class NotifyServiceProvider extends ServiceProvider
     {
         $source = realpath($raw = __DIR__.'/../config/notify.php') ?: $raw;
         $this->publishes([$source => config_path('notify.php')], 'config');
-      
-
         $this->mergeConfigFrom($source, 'notify');
 
         $this->registerBladeDirectives();
