@@ -1,6 +1,6 @@
 <?php
 
-namespace Jubayed\Notify\Tests;
+namespace Ducor\Notify\Tests;
 
 class NotifyTest extends TestCase
 {

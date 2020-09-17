@@ -1,9 +1,9 @@
 <?php
 
-namespace Jubayed\Notify;
+namespace Ducor\Notify;
 
 use RuntimeException;
-use Jubayed\Notify\Notifiers\NotifierInterface;
+use Ducor\Notify\Notifiers\NotifierInterface;
 
 class NotifierFactory
 {

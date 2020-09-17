@@ -1,6 +1,6 @@
 <?php
 
-namespace Jubayed\Notify\Notifiers;
+namespace Ducor\Notify\Notifiers;
 
 use function basename;
 

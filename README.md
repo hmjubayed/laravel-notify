@@ -1,8 +1,9 @@
-<h1 align="center">Notify notification package for Laravel 7
+# Notify notification package for Laravel 7
 
-<p align="center">:eyes: This package helps you to add notifications to your Laravel 7 projects.</p>
 
-<p align="center"><img width="300" alt="notify" src="https://user-images.githubusercontent.com/10859693/39634578-1a9f121a-4fb3-11e8-8863-d64fad42901b.png"></p>
+<p align="center">
+    <img width="300" alt="notify" src="https://user-images.githubusercontent.com/10859693/39634578-1a9f121a-4fb3-11e8-8863-d64fad42901b.png">
+</p>
 
 ## Install
 
@@ -17,7 +18,7 @@ Then add the service provider to `config/app.php`. In Laravel versions 5.5 and b
 ```php
 'providers' => [
     ...
-    Jubayed\Notify\NotifyServiceProvider::class
+    Ducor\Notify\NotifyServiceProvider::class
     ...
 ];
 ```
@@ -25,7 +26,7 @@ Then add the service provider to `config/app.php`. In Laravel versions 5.5 and b
 As optional if you want to modify the default configuration, you can publish the configuration file:
  
 ```sh
-$ php artisan vendor:publish --provider='Jubayed\Notify\NotifyServiceProvider' --tag="config"
+$ php artisan vendor:publish --provider='Ducor\Notify\NotifyServiceProvider' --tag="config"
 ```
 
 ## Usage:
@@ -123,10 +124,9 @@ return [
 
     'toastr' => [
 
-        'class' => \Jubayed\Notify\Notifiers\Toastr::class,
+        'class' => \Ducor\Notify\Notifiers\Toastr::class,
 
         'notify_js' => [
-            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
             'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js',
         ],
 
@@ -146,10 +146,9 @@ return [
 
     'pnotify' => [
 
-        'class' => \Jubayed\Notify\Notifiers\Pnotify::class,
+        'class' => \Ducor\Notify\Notifiers\Pnotify::class,
 
         'notify_js' => [
-            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
             'https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js',
         ],
 
@@ -171,10 +170,9 @@ return [
 
     'sweetalert2' => [
 
-        'class' => \Jubayed\Notify\Notifiers\SweetAlert2::class,
+        'class' => \Ducor\Notify\Notifiers\SweetAlert2::class,
 
         'notify_js' => [
-            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
             'https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.1/sweetalert2.min.js',
             'https://cdn.jsdelivr.net/npm/promise-polyfill',
         ],

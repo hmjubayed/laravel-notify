@@ -1,12 +1,12 @@
 <?php
 
-namespace Jubayed\Notify;
+namespace Ducor\Notify;
 
 use Illuminate\Config\Repository;
 use Illuminate\Session\SessionManager;
 use function in_array;
 use RuntimeException;
-use Jubayed\Notify\Notifiers\NotifierInterface;
+use Ducor\Notify\Notifiers\NotifierInterface;
 
 class Notify
 {

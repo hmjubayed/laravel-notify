@@ -6,10 +6,9 @@ return [
 
     'toastr' => [
 
-        'class' => \Jubayed\Notify\Notifiers\Toastr::class,
+        'class' => \Ducor\Notify\Notifiers\Toastr::class,
 
         'notify_js' => [
-            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
             'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js',
         ],
 
@@ -29,10 +28,9 @@ return [
 
     'pnotify' => [
 
-        'class' => \Jubayed\Notify\Notifiers\Pnotify::class,
+        'class' => \Ducor\Notify\Notifiers\Pnotify::class,
 
         'notify_js' => [
-            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
             'https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js',
         ],
 
@@ -54,10 +52,9 @@ return [
 
     'sweetalert2' => [
 
-        'class' => \Jubayed\Notify\Notifiers\SweetAlert2::class,
+        'class' => \Ducor\Notify\Notifiers\SweetAlert2::class,
 
         'notify_js' => [
-            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
             'https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.1/sweetalert2.min.js',
             'https://cdn.jsdelivr.net/npm/promise-polyfill/dist/polyfill.min.js',
         ],

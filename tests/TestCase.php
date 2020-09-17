@@ -1,8 +1,8 @@
 <?php
 
-namespace Jubayed\Notify\Tests;
+namespace Ducor\Notify\Tests;
 
-use Jubayed\Notify\NotifyServiceProvider;
+use Ducor\Notify\NotifyServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase

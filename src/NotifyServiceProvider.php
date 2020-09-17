@@ -1,6 +1,6 @@
 <?php
 
-namespace Jubayed\Notify;
+namespace Ducor\Notify;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Blade;
