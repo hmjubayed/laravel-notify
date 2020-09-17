@@ -1,10 +1,5 @@
 # Notify notification package for Laravel 7
 
-
-<p align="center">
-    <img width="300" alt="notify" src="https://user-images.githubusercontent.com/10859693/39634578-1a9f121a-4fb3-11e8-8863-d64fad42901b.png">
-</p>
-
 ## Install
 
 You can install the package using composer
