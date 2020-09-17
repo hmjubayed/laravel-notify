@@ -1,17 +1,6 @@
-<h1 align="center">Notify notification package for Laravel 5 and Lumen</h1>
+<h1 align="center">Notify notification package for Laravel 7
 
-<p align="center">:eyes: This package helps you to add notifications to your Laravel 5 and Lumen projects.</p>
-
-<p align="center">
-    <a href="https://travis-ci.org/jubayed/notify"><img src="https://travis-ci.org/jubayed/notify.svg?branch=master" alt="Build Status"></a>
-    <a href="https://packagist.org/packages/jubayed/notify"><img src="https://poser.pugx.org/jubayed/notify/v/stable" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/jubayed/notify"><img src="https://poser.pugx.org/jubayed/notify/v/unstable" alt="Latest Unstable Version"></a>
-    <a href="https://scrutinizer-ci.com/g/jubayed/notify/build-status/master"><img src="https://scrutinizer-ci.com/g/jubayed/notify/badges/build.png?b=master" alt="Build Status"></a>
-    <a href="https://scrutinizer-ci.com/g/jubayed/notify/?branch=master"><img src="https://scrutinizer-ci.com/g/jubayed/notify/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
-    <a href="https://scrutinizer-ci.com/g/jubayed/notify/?branch=master"><img src="https://scrutinizer-ci.com/g/jubayed/notify/badges/coverage.png?b=master" alt="Code Coverage"></a>
-    <a href="https://packagist.org/packages/jubayed/notify"><img src="https://poser.pugx.org/jubayed/notify/downloads" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/jubayed/notify"><img src="https://poser.pugx.org/jubayed/notify/license" alt="License"></a>
-</p>
+<p align="center">:eyes: This package helps you to add notifications to your Laravel 7 projects.</p>
 
 <p align="center"><img width="300" alt="notify" src="https://user-images.githubusercontent.com/10859693/39634578-1a9f121a-4fb3-11e8-8863-d64fad42901b.png"></p>
 
@@ -20,7 +9,7 @@
 You can install the package using composer
 
 ```sh
-$ composer require jubayed/notify
+$ composer require ducor/notify
 ```
 
 Then add the service provider to `config/app.php`. In Laravel versions 5.5 and beyond, this step can be skipped if package auto-discovery is enabled.
@@ -38,13 +27,6 @@ As optional if you want to modify the default configuration, you can publish the
 ```sh
 $ php artisan vendor:publish --provider='Jubayed\Notify\NotifyServiceProvider' --tag="config"
 ```
-
-### For Lumen :
-
-1. In `bootstrap/app.php` 
-    * uncomment `$app->withFacades();`
-    * add bindings for ToastrServiceProvider : `$app->register(Jubayed\Notify\NotifyServiceProvider::class);` 
-2. Add `config/session.php`, since it is not present in `Lumen` by default. You can take `session.php` from [Laravel Official Repository](https://github.com/laravel/laravel/blob/master/config/session.php)
 
 ## Usage:
 
@@ -213,11 +195,6 @@ return [
     ],
 ];
 ```
-
-## Credits
-
-- [Jubayed](https://github.com/jubayed)
-- [All Contributors](../../contributors)
 
 ## License
 
