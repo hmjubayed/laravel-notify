@@ -1,6 +1,6 @@
 <?php
 
-namespace Yoeunes\Notify;
+namespace Jubayed\Notify;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Blade;

@@ -1,54 +1,34 @@
 {
-    "name"             : "yoeunes/notify",
+    "name"             : "jubayed/notify",
     "license"          : "MIT",
     "description"      : "toastr.js, pnotify.js flush notifications for Laravel 5, 6, 7 and Lumen",
-    "homepage"         : "https://github.com/yoeunes/notify",
+    "homepage"         : "https://github.com/jubayed/notify",
     "keywords"         : [
         "toastr",
-        "pnotify",
-        "toastr js",
-        "pnotify js",
         "notification",
-        "laravel",
-        "laravel 5",
-        "laravel 5.6",
-        "laravel 5.7",
-        "laravel 5.8",
-        "laravel 6",
         "laravel 7",
-        "laravel notification",
-        "laravel toastr",
-        "laravel pnotify",
-        "flush",
-        "flush notifications",
-        "laravel flush notifications",
-        "flush messages",
-        "messages",
-        "alerts",
-        "Lumen",
-        "php",
-        "yoeunes"
+        "laravel toastr"
     ],
     "authors"          : [
         {
-            "name"    : "Younes Khoubza",
-            "email"   : "younes.khoubza@gmail.com",
-            "homepage": "https://github.com/yoeunes/notify",
+            "name"    : "Jubayed Hossain",
+            "email"   : "admin@jubayed.com",
+            "homepage": "https://github.com/jubayed/notify",
             "role"    : "Developer"
         }
     ],
     "require"          : {
-        "php"               : ">=7.0",
-        "illuminate/session": "^5.5 || ^6.0 || ^7.0",
-        "illuminate/support": "^5.5 || ^6.0 || ^7.0"
+        "php"               : "^7.3",
+        "illuminate/session": "^7.0",
+        "illuminate/support": "^7.0"
     },
     "require-dev"      : {
-        "orchestra/testbench": "^2.0.4 || ^3.0 || ^4.0 || ^5.0",
-        "phpunit/phpunit"    : "^4.8.36 || ^5.7 || ^6.0 || ^7.0 || ^8.3 || ^9.0"
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit"    : "^7.0 || ^8.3 || ^9.0"
     },
     "autoload"         : {
         "psr-4": {
-            "Yoeunes\\Notify\\": "src"
+            "Jubayed\\Notify\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -56,7 +36,7 @@
     },
     "autoload-dev"     : {
         "psr-4": {
-            "Yoeunes\\Notify\\Tests\\": "tests"
+            "Jubayed\\Notify\\Tests\\": "tests"
         }
     },
     "minimum-stability": "stable",
@@ -64,10 +44,10 @@
     "extra"            : {
         "laravel": {
             "providers": [
-                "Yoeunes\\Notify\\NotifyServiceProvider"
+                "Jubayed\\Notify\\NotifyServiceProvider"
             ],
             "aliases"  : {
-                "Notify": "Yoeunes\\Notify\\Facades\\Notify"
+                "Notify": "JUbayed\\Notify\\Facades\\Notify"
             }
         }
     },

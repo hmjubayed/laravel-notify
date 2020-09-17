@@ -1,6 +1,6 @@
 <?php
 
-namespace Yoeunes\Notify\Notifiers;
+namespace Jubayed\Notify\Notifiers;
 
 class Toastr extends AbstractNotifier implements NotifierInterface
 {

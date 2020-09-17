@@ -1,6 +1,6 @@
 <?php
 
-namespace Yoeunes\Notify\Tests;
+namespace Jubayed\Notify\Tests;
 
 class NotifyTest extends TestCase
 {

@@ -3,14 +3,14 @@
 <p align="center">:eyes: This package helps you to add notifications to your Laravel 5 and Lumen projects.</p>
 
 <p align="center">
-    <a href="https://travis-ci.org/yoeunes/notify"><img src="https://travis-ci.org/yoeunes/notify.svg?branch=master" alt="Build Status"></a>
-    <a href="https://packagist.org/packages/yoeunes/notify"><img src="https://poser.pugx.org/yoeunes/notify/v/stable" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/yoeunes/notify"><img src="https://poser.pugx.org/yoeunes/notify/v/unstable" alt="Latest Unstable Version"></a>
-    <a href="https://scrutinizer-ci.com/g/yoeunes/notify/build-status/master"><img src="https://scrutinizer-ci.com/g/yoeunes/notify/badges/build.png?b=master" alt="Build Status"></a>
-    <a href="https://scrutinizer-ci.com/g/yoeunes/notify/?branch=master"><img src="https://scrutinizer-ci.com/g/yoeunes/notify/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
-    <a href="https://scrutinizer-ci.com/g/yoeunes/notify/?branch=master"><img src="https://scrutinizer-ci.com/g/yoeunes/notify/badges/coverage.png?b=master" alt="Code Coverage"></a>
-    <a href="https://packagist.org/packages/yoeunes/notify"><img src="https://poser.pugx.org/yoeunes/notify/downloads" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/yoeunes/notify"><img src="https://poser.pugx.org/yoeunes/notify/license" alt="License"></a>
+    <a href="https://travis-ci.org/jubayed/notify"><img src="https://travis-ci.org/jubayed/notify.svg?branch=master" alt="Build Status"></a>
+    <a href="https://packagist.org/packages/jubayed/notify"><img src="https://poser.pugx.org/jubayed/notify/v/stable" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/jubayed/notify"><img src="https://poser.pugx.org/jubayed/notify/v/unstable" alt="Latest Unstable Version"></a>
+    <a href="https://scrutinizer-ci.com/g/jubayed/notify/build-status/master"><img src="https://scrutinizer-ci.com/g/jubayed/notify/badges/build.png?b=master" alt="Build Status"></a>
+    <a href="https://scrutinizer-ci.com/g/jubayed/notify/?branch=master"><img src="https://scrutinizer-ci.com/g/jubayed/notify/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
+    <a href="https://scrutinizer-ci.com/g/jubayed/notify/?branch=master"><img src="https://scrutinizer-ci.com/g/jubayed/notify/badges/coverage.png?b=master" alt="Code Coverage"></a>
+    <a href="https://packagist.org/packages/jubayed/notify"><img src="https://poser.pugx.org/jubayed/notify/downloads" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/jubayed/notify"><img src="https://poser.pugx.org/jubayed/notify/license" alt="License"></a>
 </p>
 
 <p align="center"><img width="300" alt="notify" src="https://user-images.githubusercontent.com/10859693/39634578-1a9f121a-4fb3-11e8-8863-d64fad42901b.png"></p>
@@ -20,7 +20,7 @@
 You can install the package using composer
 
 ```sh
-$ composer require yoeunes/notify
+$ composer require jubayed/notify
 ```
 
 Then add the service provider to `config/app.php`. In Laravel versions 5.5 and beyond, this step can be skipped if package auto-discovery is enabled.
@@ -28,7 +28,7 @@ Then add the service provider to `config/app.php`. In Laravel versions 5.5 and b
 ```php
 'providers' => [
     ...
-    Yoeunes\Notify\NotifyServiceProvider::class
+    Jubayed\Notify\NotifyServiceProvider::class
     ...
 ];
 ```
@@ -36,14 +36,14 @@ Then add the service provider to `config/app.php`. In Laravel versions 5.5 and b
 As optional if you want to modify the default configuration, you can publish the configuration file:
  
 ```sh
-$ php artisan vendor:publish --provider='Yoeunes\Notify\NotifyServiceProvider' --tag="config"
+$ php artisan vendor:publish --provider='Jubayed\Notify\NotifyServiceProvider' --tag="config"
 ```
 
 ### For Lumen :
 
 1. In `bootstrap/app.php` 
     * uncomment `$app->withFacades();`
-    * add bindings for ToastrServiceProvider : `$app->register(Yoeunes\Notify\NotifyServiceProvider::class);` 
+    * add bindings for ToastrServiceProvider : `$app->register(Jubayed\Notify\NotifyServiceProvider::class);` 
 2. Add `config/session.php`, since it is not present in `Lumen` by default. You can take `session.php` from [Laravel Official Repository](https://github.com/laravel/laravel/blob/master/config/session.php)
 
 ## Usage:
@@ -94,7 +94,7 @@ After that add the `@notify_render` at the bottom of your view to actualy render
 <!doctype html>
 <html>
     <head>
-        <title>yoeunes/toastr</title>
+        <title>jubayed/toastr</title>
         @notify_css
     </head>
     <body>
@@ -141,7 +141,7 @@ return [
 
     'toastr' => [
 
-        'class' => \Yoeunes\Notify\Notifiers\Toastr::class,
+        'class' => \Jubayed\Notify\Notifiers\Toastr::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
@@ -164,7 +164,7 @@ return [
 
     'pnotify' => [
 
-        'class' => \Yoeunes\Notify\Notifiers\Pnotify::class,
+        'class' => \Jubayed\Notify\Notifiers\Pnotify::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
@@ -189,7 +189,7 @@ return [
 
     'sweetalert2' => [
 
-        'class' => \Yoeunes\Notify\Notifiers\SweetAlert2::class,
+        'class' => \Jubayed\Notify\Notifiers\SweetAlert2::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
@@ -216,7 +216,7 @@ return [
 
 ## Credits
 
-- [Younes Khoubza](https://github.com/yoeunes)
+- [Jubayed](https://github.com/jubayed)
 - [All Contributors](../../contributors)
 
 ## License

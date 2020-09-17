@@ -1,12 +1,12 @@
 <?php
 
-namespace Yoeunes\Notify;
+namespace Jubayed\Notify;
 
 use Illuminate\Config\Repository;
 use Illuminate\Session\SessionManager;
 use function in_array;
 use RuntimeException;
-use Yoeunes\Notify\Notifiers\NotifierInterface;
+use Jubayed\Notify\Notifiers\NotifierInterface;
 
 class Notify
 {

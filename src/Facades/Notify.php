@@ -1,6 +1,6 @@
 <?php
 
-namespace Yoeunes\Notify\Facades;
+namespace Jubayed\Notify\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

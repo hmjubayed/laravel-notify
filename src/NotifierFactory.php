@@ -1,9 +1,9 @@
 <?php
 
-namespace Yoeunes\Notify;
+namespace Jubayed\Notify;
 
 use RuntimeException;
-use Yoeunes\Notify\Notifiers\NotifierInterface;
+use Jubayed\Notify\Notifiers\NotifierInterface;
 
 class NotifierFactory
 {

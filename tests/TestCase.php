@@ -1,8 +1,8 @@
 <?php
 
-namespace Yoeunes\Notify\Tests;
+namespace Jubayed\Notify\Tests;
 
-use Yoeunes\Notify\NotifyServiceProvider;
+use Jubayed\Notify\NotifyServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase

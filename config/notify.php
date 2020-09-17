@@ -6,7 +6,7 @@ return [
 
     'toastr' => [
 
-        'class' => \Yoeunes\Notify\Notifiers\Toastr::class,
+        'class' => \Jubayed\Notify\Notifiers\Toastr::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
@@ -29,7 +29,7 @@ return [
 
     'pnotify' => [
 
-        'class' => \Yoeunes\Notify\Notifiers\Pnotify::class,
+        'class' => \Jubayed\Notify\Notifiers\Pnotify::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
@@ -54,7 +54,7 @@ return [
 
     'sweetalert2' => [
 
-        'class' => \Yoeunes\Notify\Notifiers\SweetAlert2::class,
+        'class' => \Jubayed\Notify\Notifiers\SweetAlert2::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
