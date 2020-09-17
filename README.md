@@ -77,7 +77,7 @@ After that add the `@notify_render` at the bottom of your view to actualy render
 <!doctype html>
 <html>
     <head>
-        <title>jubayed/toastr</title>
+        <title>Ducor/toastr</title>
         @notify_css
     </head>
     <body>

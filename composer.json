@@ -1,19 +1,18 @@
 {
     "name"             : "ducor/notify",
     "license"          : "MIT",
-    "description"      : "toastr.js, pnotify.js flush notifications for Laravel 5, 6, 7",
-    "homepage"         : "https://github.com/jubayed/notify",
+    "description"      : "toastr.js, pnotify.js flush notifications for Laravel",
+    "homepage"         : "https://ducor.io/notify",
     "keywords"         : [
         "toastr",
         "notification",
-        "laravel 7",
-        "laravel toastr"
+        "laravel"
     ],
     "authors"          : [
         {
             "name"    : "Ali Asraf",
             "email"   : "ducorteam@gmail.com",
-            "homepage": "https://github.com/jubayed/notify",
+            "homepage": "https://github.com/Ducor/notify",
             "role"    : "Developer"
         }
     ],
@@ -24,11 +23,11 @@
     },
     "require-dev"      : {
         "orchestra/testbench": "^5.0",
-        "phpunit/phpunit"    : "^7.0 || ^8.3 || ^9.0"
+        "phpunit/phpunit"    : "^8.3 || ^9.0"
     },
     "autoload"         : {
         "psr-4": {
-            "Jubayed\\Notify\\": "src"
+            "Ducor\\Notify\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -36,7 +35,7 @@
     },
     "autoload-dev"     : {
         "psr-4": {
-            "Jubayed\\Notify\\Tests\\": "tests"
+            "Ducor\\Notify\\Tests\\": "tests"
         }
     },
     "minimum-stability": "stable",
@@ -44,10 +43,10 @@
     "extra"            : {
         "laravel": {
             "providers": [
-                "Jubayed\\Notify\\NotifyServiceProvider"
+                "Ducor\\Notify\\NotifyServiceProvider"
             ],
             "aliases"  : {
-                "Notify": "JUbayed\\Notify\\Facades\\Notify"
+                "Notify": "Ducor\\Notify\\Facades\\Notify"
             }
         }
     },
