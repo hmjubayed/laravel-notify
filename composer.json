@@ -1,5 +1,5 @@
 {
-    "name"             : "jubayed/notify",
+    "name"             : "ducor/notify",
     "license"          : "MIT",
     "description"      : "toastr.js, pnotify.js flush notifications for Laravel 5, 6, 7 and Lumen",
     "homepage"         : "https://github.com/jubayed/notify",
@@ -11,8 +11,8 @@
     ],
     "authors"          : [
         {
-            "name"    : "Jubayed Hossain",
-            "email"   : "admin@jubayed.com",
+            "name"    : "Ali Asraf",
+            "email"   : "ducorteam@gmail.com",
             "homepage": "https://github.com/jubayed/notify",
             "role"    : "Developer"
         }
