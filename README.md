@@ -5,7 +5,7 @@
 You can install the package using composer
 
 ```sh
-$ composer require ducor/notify
+$ composer require jubayed/notify
 ```
 
 Then add the service provider to `config/app.php`. In Laravel versions 5.5 and beyond, this step can be skipped if package auto-discovery is enabled.
