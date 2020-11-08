@@ -1,6 +1,6 @@
 <?php
 
-namespace Ducor\Notify\Notifiers;
+namespace Jubayed\Notify\Notifiers;
 
 class SweetAlert2 extends AbstractNotifier implements NotifierInterface
 {

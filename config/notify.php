@@ -6,7 +6,7 @@ return [
 
     'toastr' => [
 
-        'class' => \Ducor\Notify\Notifiers\Toastr::class,
+        'class' => \Jubayed\Notify\Notifiers\Toastr::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js',
@@ -28,7 +28,7 @@ return [
 
     'pnotify' => [
 
-        'class' => \Ducor\Notify\Notifiers\Pnotify::class,
+        'class' => \Jubayed\Notify\Notifiers\Pnotify::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js',
@@ -52,7 +52,7 @@ return [
 
     'sweetalert2' => [
 
-        'class' => \Ducor\Notify\Notifiers\SweetAlert2::class,
+        'class' => \Jubayed\Notify\Notifiers\SweetAlert2::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.1/sweetalert2.min.js',

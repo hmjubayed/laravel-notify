@@ -1,4 +1,4 @@
-# Notify notification package for Laravel 7
+# Notify notification package for Laravel 8
 
 ## Install
 
@@ -13,7 +13,7 @@ Then add the service provider to `config/app.php`. In Laravel versions 5.5 and b
 ```php
 'providers' => [
     ...
-    Ducor\Notify\NotifyServiceProvider::class
+    Jubayed\Notify\NotifyServiceProvider::class
     ...
 ];
 ```
@@ -21,7 +21,7 @@ Then add the service provider to `config/app.php`. In Laravel versions 5.5 and b
 As optional if you want to modify the default configuration, you can publish the configuration file:
  
 ```sh
-$ php artisan vendor:publish --provider='Ducor\Notify\NotifyServiceProvider' --tag="config"
+$ php artisan vendor:publish --provider='Jubayed\Notify\NotifyServiceProvider' --tag="config"
 ```
 
 ## Usage:
@@ -34,7 +34,7 @@ Include jQuery and your notification plugin assets in your view template:
 4. use `notify()` helper function inside your controller to set a toast notification for info, success, warning or error
 ```php
 // Display an info toast with no title
-notify()->info('Are you the 6 fingered man?')
+notify()->info('Are you the 8 fingered man?')
 ```
 
 as an example:
@@ -119,7 +119,7 @@ return [
 
     'toastr' => [
 
-        'class' => \Ducor\Notify\Notifiers\Toastr::class,
+        'class' => \Jubayed\Notify\Notifiers\Toastr::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js',
@@ -141,7 +141,7 @@ return [
 
     'pnotify' => [
 
-        'class' => \Ducor\Notify\Notifiers\Pnotify::class,
+        'class' => \Jubayed\Notify\Notifiers\Pnotify::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.js',
@@ -165,7 +165,7 @@ return [
 
     'sweetalert2' => [
 
-        'class' => \Ducor\Notify\Notifiers\SweetAlert2::class,
+        'class' => \Jubayed\Notify\Notifiers\SweetAlert2::class,
 
         'notify_js' => [
             'https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.1/sweetalert2.min.js',

@@ -1,6 +1,6 @@
 <?php
 
-use Ducor\Notify\Notify;
+use Jubayed\Notify\Notify;
 
 if (! function_exists('notify')) {
     /**

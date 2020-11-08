@@ -1,6 +1,6 @@
 <?php
 
-namespace Ducor\Notify\Facades;
+namespace Jubayed\Notify\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

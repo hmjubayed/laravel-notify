@@ -1,6 +1,6 @@
 <?php
 
-namespace Ducor\Notify\Notifiers;
+namespace Jubayed\Notify\Notifiers;
 
 class Toastr extends AbstractNotifier implements NotifierInterface
 {
