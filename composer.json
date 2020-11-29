@@ -1,5 +1,5 @@
 {
-    "name"             : "jubayed/notify",
+    "name"             : "jubayed/laravel-notify",
     "license"          : "MIT",
     "description"      : "toastr.js, pnotify.js flush notifications for Laravel",
     "homepage"         : "https://github.com/jubayed/notify",
@@ -10,11 +10,10 @@
     ],
     "authors"          : [
         {
-            "name"    : "Ali Asraf"
+            "name"    : "Jubayed Hossain"
         }
     ],
     "require"          : {
-        "php"               : "^7.4",
         "illuminate/session": "^8.0",
         "illuminate/support": "^8.0"
     },
