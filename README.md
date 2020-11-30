@@ -28,14 +28,10 @@ $ php artisan vendor:publish --provider='Jubayed\Notify\NotifyServiceProvider' -
 
 Include jQuery and your notification plugin assets in your view template: 
 
-3. Add `notify_render` to render method in footer
+1. Add `notify_render()` to render method in footer
 
-```javascript
-<script type="text/javascript">
-{!! notify_render() !!}
-</script>
-```
-4. use `notify()` helper function inside your controller to set a toast notification for info, success, warning or error
+2. use `notify()` helper function inside your controller to set a toast notification for info, success, warning or error
+
 ```php
 // Display an info toast with no title
 notify()->info('Are you the 8 fingered man?')
@@ -70,20 +66,20 @@ class PostController extends Controller
 }
 ```
 
-After that add the `@notify_render` at the bottom of your view to actualy render the notify notifications.
+After that add the `notify_render()` at the bottom of your view to actualy render the notify notifications.
 
 ```blade
 <!doctype html>
 <html>
     <head>
         <title>Ducor/toastr</title>
-        @notify_css
     </head>
     <body>
         
     </body>
-    @notify_js
-    @notify_render
+    <script type="text/javascript">
+    {!! notify_render() !!}
+    </script>
 </html>
 ```
 ### Other Options
