@@ -1,4 +1,4 @@
-# Notify notification package for Laravel 8
+# Notify notification package for Laravel
 
 ## Install
 
@@ -28,9 +28,13 @@ $ php artisan vendor:publish --provider='Jubayed\Notify\NotifyServiceProvider' -
 
 Include jQuery and your notification plugin assets in your view template: 
 
-1. Add your styles links tag or `@notify_css`
-2. Add your scripts links tags or `@notify_js`
-3. Add `@notify_render` to render your notification
+3. Add `notify_render` to render method in footer
+
+```javascript
+<script type="text/javascript">
+{!! notify_render() !!}
+</script>
+```
 4. use `notify()` helper function inside your controller to set a toast notification for info, success, warning or error
 ```php
 // Display an info toast with no title
