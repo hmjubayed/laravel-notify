@@ -46,14 +46,6 @@ class NotifyServiceProvider extends ServiceProvider
         Blade::directive('notify_render', function () {
             return "<?php echo app('notify')->render(); ?>";
         });
-
-        Blade::directive('notify_css', function () {
-            return '<?php echo notify_css(); ?>';
-        });
-
-        Blade::directive('notify_js', function () {
-            return '<?php echo notify_js(); ?>';
-        });
     }
 
     /**
