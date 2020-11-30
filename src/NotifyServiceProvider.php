@@ -18,6 +18,8 @@ class NotifyServiceProvider extends ServiceProvider
         $source = realpath($raw = __DIR__.'/../config/notify.php') ?: $raw;
         $this->publishes([$source => config_path('notify.php')], 'config');
         $this->mergeConfigFrom($source, 'notify');
+        $this->registerBladeDirectives();
+
     }
 
     /**
@@ -50,4 +52,12 @@ class NotifyServiceProvider extends ServiceProvider
             'notify',
         ];
     }
+
+    public function registerBladeDirectives()
+    {
+        Blade::directive('notify_render', function () {
+            return "<?php echo app('notify')->render(); ?>";
+        });
+    }
+
 }
