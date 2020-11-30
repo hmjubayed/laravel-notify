@@ -28,7 +28,7 @@ abstract class AbstractNotifier
      */
     public function render(array $notifications): string
     {
-        return '<script type="text/javascript">'.$this->options().$this->notificationsAsString($notifications).'</script>';
+        return $this->options().$this->notificationsAsString($notifications);
     }
 
     /**
