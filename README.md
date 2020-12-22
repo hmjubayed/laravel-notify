@@ -191,7 +191,55 @@ return [
     ],
 ];
 ```
+---------------------------
+# Alert Box (Laravel)
 
-## License
+A helper package to flash a bootstrap alert to the browser via a Facade or a helper function.
 
-MIT
+```html
+<div class="alert alert-info fade in">
+	<i class="fa-fw fa fa-smile-o"></i>
+	<strong>Title</strong> Description
+</div>
+```
+
+## Usage
+
+Within any view file.
+
+```html
+@include('alert::alert')
+```
+
+Within any Controller.
+
+```php
+public function index()
+{
+    // helper function - default to the 'info'
+	alert('Title', 'Lorem Ipsum');
+
+	// return object first
+	alert()->info('Title', 'Lorem Ipsum');
+
+	// via the facade
+    Alert::info('Title', 'Lorem Ipsum');
+
+	return view('home');
+}
+```
+
+The different 'levels' are:
+- `alert()->info('Title', 'Lorem Ipsum');`
+- `alert()->success('Title', 'Lorem Ipsum');`
+- `alert()->warning('Title', 'Lorem Ipsum');`
+- `alert()->danger('Title', 'Lorem Ipsum');`
+
+The different arguments:
+- `alert()->info('Title', 'Lorem Ipsum', false);` // without the icon
+- `alert()->info('Title', 'Lorem Ipsum', 'smile-o');` // specify the icon class
+- `alert()->message('Title', 'Lorem Ipsum', 'smile-o', 'info');` // specify the type of level
+- `alert()->message('Title', 'Lorem Ipsum', 'smile-o', 'info', false);` // do not show the 'close' button
+
+
+The view partial can be found here `resources\views\vendor\alert\alert.blade`.
