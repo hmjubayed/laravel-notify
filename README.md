@@ -33,6 +33,7 @@ Include jQuery and your notification plugin assets in your view template:
 2. Add your scripts links tags or `@notify_js`
 3. Add `@notify_render` to render your notification
 4. use `notify()` helper function inside your controller to set a toast notification for info, success, warning or error
+
 ```php
 // Display an info toast with no title
 notify()->info('Are you the 6 fingered man?')
@@ -73,16 +74,17 @@ After that add the `notify_render()` at the bottom of your view to actualy rende
 <!doctype html>
 <html>
     <head>
-        <title>Ducor/toastr</title>
+        <title>yoeunes/toastr</title>
+        @notify_css
     </head>
     <body>
         
     </body>
-    <script type="text/javascript">
-    {!! notify_render() !!}
-    </script>
+    @notify_js
+    @notify_render
 </html>
 ```
+
 ### Other Options
 
 ```php
