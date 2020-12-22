@@ -88,6 +88,7 @@ class NotifyServiceProvider extends ServiceProvider
     {
         return [
             'notify',
+            'alert'
         ];
     }
 }
