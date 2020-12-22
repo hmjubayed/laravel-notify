@@ -99,9 +99,9 @@ if (!function_exists('alert_icon')) {
     }
 }
 
-if (function_exists('notify_path')) {
+if (!function_exists('notify_path')) {
 
-    function notify_path(String $path = null)
+    function notify_path($path = null)
     {
         $basedir =   dirname(__DIR__, 1);
         if ($path == null) {
