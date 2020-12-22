@@ -47,4 +47,6 @@ return [
 
         'options' => [],
     ],
+
+    'alert' => 'bootstrap-4', // bootstrap-4,
 ];

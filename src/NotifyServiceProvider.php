@@ -4,6 +4,7 @@ namespace Jubayed\Notify;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
 class NotifyServiceProvider extends ServiceProvider
@@ -27,10 +28,11 @@ class NotifyServiceProvider extends ServiceProvider
         $this->mergeConfigFrom($source, 'notify');
         $this->registerBladeDirectives();
 
-        $this->loadViewsFrom(__DIR__ . '/../views', 'alert');
-
+        // alert type
+        $view_path = dirname(__DIR__, 1) . '/../views/' . Config::get('notify.alert');
+        $this->loadViewsFrom($view_path, 'alert');
         $this->publishes([
-            __DIR__ . '/../views' => base_path('resources/views/vendor/alert')
+            $view_path  => base_path('resources/views/vendor/alert')
         ]);
 
     }
