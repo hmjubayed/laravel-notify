@@ -1,6 +1,7 @@
 <?php
 
 use Jubayed\Notify\Notify;
+use PhpParser\Builder\Namespace_;
 
 if (! function_exists('notify')) {
     /**
@@ -95,5 +96,22 @@ if (!function_exists('alert_icon')) {
                 return 'fas fa-fw fa-info';
                 break;
         }
+    }
+}
+
+if (function_exists('notify_path')) {
+
+    function notify_path(String $path = null)
+    {
+        $basedir =   dirname(__DIR__, 1);
+        if ($path == null) {
+            return $basedir;
+        }
+
+        $path = str_replace('/', DIRECTORY_SEPARATOR, $basedir . DIRECTORY_SEPARATOR . $path);
+        $path = str_replace('\\', DIRECTORY_SEPARATOR, $path);
+        $path = str_replace(DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR, $path);
+
+        return $path;
     }
 }
