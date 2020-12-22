@@ -60,6 +60,8 @@ class NotifyServiceProvider extends ServiceProvider
         $this->app->singleton('alert', function () {
             return $this->app->make(Alert::class);
         });
+        //
+        //$this->app->alias('alert', Notify::class);
 
     }
 
