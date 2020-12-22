@@ -41,6 +41,22 @@ class NotifyServiceProvider extends ServiceProvider
         $this->app->alias('notify', Notify::class);
     }
 
+
+    public function registerBladeDirectives()
+    {
+        Blade::directive('notify_render', function () {
+            return "<?php echo app('notify')->render(); ?>";
+        });
+
+        Blade::directive('notify_css', function () {
+            return '<?php echo notify_css(); ?>';
+        });
+
+        Blade::directive('notify_js', function () {
+            return '<?php echo notify_js(); ?>';
+        });
+    }
+
     /**
      * Get the services provided by the provider.
      *
@@ -52,12 +68,4 @@ class NotifyServiceProvider extends ServiceProvider
             'notify',
         ];
     }
-
-    public function registerBladeDirectives()
-    {
-        Blade::directive('notify_render', function () {
-            return "<?php echo app('notify')->render(); ?>";
-        });
-    }
-
 }

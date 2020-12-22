@@ -24,19 +24,20 @@ As optional if you want to modify the default configuration, you can publish the
 $ php artisan vendor:publish --provider='Jubayed\Notify\NotifyServiceProvider' --tag="config"
 ```
 
+
 ## Usage:
 
 Include jQuery and your notification plugin assets in your view template: 
 
-1. Add `notify_render()` to render method in footer
-
-2. use `notify()` helper function inside your controller to set a toast notification for info, success, warning or error
-
+1. Add your styles links tag or `@notify_css`
+2. Add your scripts links tags or `@notify_js`
+3. Add `@notify_render` to render your notification
+4. use `notify()` helper function inside your controller to set a toast notification for info, success, warning or error
 ```php
 // Display an info toast with no title
-notify()->info('Are you the 8 fingered man?')
-```
+notify()->info('Are you the 6 fingered man?')
 
+```
 as an example:
 ```php
 <?php
