@@ -9,6 +9,13 @@ use Illuminate\Support\ServiceProvider;
 class NotifyServiceProvider extends ServiceProvider
 {
     /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = false;
+
+    /**
      * Bootstrap the application events.
      *
      * @return void
@@ -19,6 +26,12 @@ class NotifyServiceProvider extends ServiceProvider
         $this->publishes([$source => config_path('notify.php')], 'config');
         $this->mergeConfigFrom($source, 'notify');
         $this->registerBladeDirectives();
+
+        $this->loadViewsFrom(__DIR__ . '/../views', 'alert');
+
+        $this->publishes([
+            __DIR__ . '/../views' => base_path('resources/views/vendor/alert')
+        ]);
 
     }
 
@@ -39,6 +52,13 @@ class NotifyServiceProvider extends ServiceProvider
         });
 
         $this->app->alias('notify', Notify::class);
+
+        //
+        // singleton
+        $this->app->singleton('alert', function () {
+            return $this->app->make(Alert::class);
+        });
+
     }
 
 
