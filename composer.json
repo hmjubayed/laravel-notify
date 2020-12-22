@@ -6,11 +6,17 @@
     "keywords"         : [
         "toastr",
         "notification",
-        "laravel"
+        "laravel",
+        "notify",
+        "alert",
+        "bootstrap"
     ],
     "authors"          : [
         {
-            "name"    : "Jubayed Hossain"
+            "name"    : "Jubayed Hossain",
+            "email": "support@jubayed.net",
+            "homepage": "https://jubayed.me",
+            "role": "Developer"
         }
     ],
     "require"          : {
@@ -40,7 +46,8 @@
                 "Jubayed\\Notify\\NotifyServiceProvider"
             ],
             "aliases"  : {
-                "Notify": "Jubayed\\Notify\\Facades\\Notify"
+                "Notify": "Jubayed\\Notify\\Facades\\Notify",
+                "Alert": "Jubayed\\Notify\\Facades\\Alert"
             }
         }
     },
