@@ -29,7 +29,7 @@ class NotifyServiceProvider extends ServiceProvider
         $this->registerBladeDirectives();
 
         // alert type
-        $view_path = dirname(__DIR__, 1) . "/views/" . Config::get('notify.alert');
+        $view_path = Config::get('notify.alert.path');
         $this->loadViewsFrom($view_path, 'alert');
         $this->publishes([
             $view_path  => base_path('resources/views/vendor/alert')

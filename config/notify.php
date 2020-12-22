@@ -48,5 +48,7 @@ return [
         'options' => [],
     ],
 
-    'alert' => 'bootstrap-4', // bootstrap-4,
+    'alert' => [
+        'path' => notify_path('views/bootstrap-4'),
+    ]
 ];
