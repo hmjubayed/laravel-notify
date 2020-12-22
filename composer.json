@@ -2,7 +2,7 @@
     "name"             : "jubayed/laravel-notify",
     "license"          : "MIT",
     "description"      : "toastr.js, pnotify.js flush notifications for Laravel",
-    "homepage"         : "https://github.com/jubayed/notify",
+    "homepage"         : "https://github.com/jubayed/laravel-notify",
     "keywords"         : [
         "toastr",
         "notification",
@@ -20,8 +20,8 @@
         }
     ],
     "require"          : {
-        "illuminate/session": "^8.0",
-        "illuminate/support": "^8.0"
+        "illuminate/session": "^8.5",
+        "illuminate/support": "^8.5"
     },
     "require-dev"      : {
     },
