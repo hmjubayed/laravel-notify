@@ -49,6 +49,6 @@ return [
     ],
 
     'alert' => [
-        'path' => notify_path('views/bootstrap-4'),
+        'path' => \notify_path('views/bootstrap-4'),
     ]
 ];
