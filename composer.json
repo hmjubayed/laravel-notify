@@ -20,7 +20,7 @@
         }
     ],
     "require"          : {
-        "php": "^7.1|^8.1",
+        "php": "^7.1|^8.0",
         "illuminate/session": "^8.5",
         "illuminate/support": "^8.5"
     },
